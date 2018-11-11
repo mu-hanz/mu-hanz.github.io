@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'themify';
+  src:url('../fonts/themify.eot?-fvbane');
+  src:url('../fonts/themify.eot?#iefix-fvbane') format('embedded-opentype'),
+    url('../fonts/themify.woff?-fvbane') format('woff'),
+    url('../fonts/themify.ttf?-fvbane') format('truetype'),
+    url('../fonts/themify.svg?-fvbane#themify') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.dd {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  font-size: 13px;
+  line-height: 20px; }
+
+.dd-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .dd-list .dd-list {
+    padding-left: 30px; }
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 20px;
+  font-size: 13px;
+  line-height: 1; }
+
+.dd-handle {
+  display: block;
+  height: 35px;
+  margin: 5px 0;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #eee;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-sizing: border-box;
+text-align: center;}
+
+
+   .dd-handle-delete {
+  display: block;
+  height: 35px;
+  margin: 5px 0;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #eee;
+  background: #f8f8f8;
+  border-radius: 3px;
+  box-sizing: border-box; 
+text-align: center;}
+  .dd-handle:hover {
+    color: #2ea8e5;
+ }
+
+.dd-item > button {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 24px;
+  margin: 5px 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold; }
+  .dd-item > button:before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0; 
+    font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  }
+  .dd-item > button.dd-expand:before {
+    content: "\e661"; }
+  .dd-item > button.dd-collapse:before {
+    content: "\e663"; }
+
+.dd-expand {
+  display: none; }
+
+.dd-collapsed .dd-list,
+.dd-collapsed .dd-collapse {
+  display: none; }
+
+.dd-collapsed .dd-expand {
+  display: block; }
+
+.dd-empty,
+.dd-placeholder {
+  margin: 5px 0;
+  padding: 0;
+  min-height: 30px;
+  background: #f9f9f9;
+  border: 1px dashed #b6bcbf;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+.dd-empty {
+  border: 1px dashed #bbb;
+  min-height: 100px;
+  background-color: #e5e5e5;
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px; }
+
+.dd-dragel {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999; }
+  .dd-dragel > .dd-item .dd-handle {
+    margin-top: 0; }
+  .dd-dragel .dd-content {
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.1); }
+
+.dd-nochildren .dd-placeholder {
+  display: none; }
+
+.dd-content .dd-handle {
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    width: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.dd-content .dd-handle-collapse {
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    width: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 0;
+    font-family: 'themify';
+    background-color: #f8f8f8;
+border: 1px solid #eee;
+
+}
+
+.dd-content .dd-handle-delete {
+    position: absolute;
+    margin: 0;
+    right: 39px;
+    top: 0;
+    cursor: pointer;
+    width: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 0;
+}
+
+.dd-content {
+    padding: 10px 10px 10px 55px;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    background-color: #fff; 
+}
+
+.dd-list-handle .dd-item > button{
+  margin-left: 45px;
+  margin-right: 8px;
+}
+
+.box-card {
+    border-radius: 0;
+    margin-bottom: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-top: none;
+}
+
+
+.dd-handle-collapse > button {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin: 4px 7px;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold; }
+  .dd-handle-collapse > button:before {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-indent: 0; 
+    font-family: 'themify';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  }
+
+  .dd-handle-collapse > button:before {
+    content: "\e64b"; }
+  .dd-handle-collapse > button.collapsed:before {
+    content: "\e649"; }
