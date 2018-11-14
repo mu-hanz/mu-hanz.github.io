@@ -1,8 +1,8 @@
 # Mosting
 Free template for admin blog
 
-# Mosting
-[Demo on Youtube](https://youtu.be/uqI9DsZd8uY)
+# Demo
+[View demo](https://youtu.be/uqI9DsZd8uY)
 
 # Credit
 [Bootsrtap 4](https://getbootstrap.com/)
